@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.thongtintaikhoan"
+    >
+
+<!--    <LinearLayout-->
+<!--        android:gravity="|top"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        >-->
+<!--   <TextView-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:text="Tên tài khoản "-->
+<!--       />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tài khoản "-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Mật khẩu "-->
+<!--        />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_gravity="center">-->
+<!--        <Button-->
+<!--            android:id="@+id/btn_doimk"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginRight="3dp"-->
+<!--            android:background="@drawable/dangkyvien"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Đổi mật khẩu"-->
+<!--            android:textColor="@color/white"/>-->
+<!--    </LinearLayout>-->
+
+</FrameLayout>

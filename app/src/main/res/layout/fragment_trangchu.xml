@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.TrangchuFragment"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:layout_marginTop="50dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOE ONE"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        >
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý sản phẩm"
+            android:id="@+id/btnsanpham"
+            android:background="@drawable/khunhhome"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý tài khoản "
+            android:id="@+id/btnquanlytk"
+            android:background="@drawable/khunhhome"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý thông tin"
+            android:id="@+id/btnthongtintk"
+            android:background="@drawable/khunhhome"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý Đơn hàng "
+            android:id="@+id/btndonhang"
+            android:background="@drawable/khunhhome"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="45dp"
+        >
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doanh thu"
+            android:id="@+id/btndoanhthu"
+            android:background="@drawable/khunhhome"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top 10"
+            android:id="@+id/btntop10"
+            android:background="@drawable/khunhhome"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="10dp"
+            />
+
+
+    </LinearLayout>
+
+    
+</LinearLayout>
+
