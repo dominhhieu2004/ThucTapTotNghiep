@@ -19,14 +19,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.thuctapimtech.DAO.DAOQuanTriVien;
-import com.example.thuctapimtech.Fragment.DoanhThuFragment;
 import com.example.thuctapimtech.Fragment.DoiMatKhauFragment;
 import com.example.thuctapimtech.Fragment.HoaDonFragment;
 import com.example.thuctapimtech.Fragment.QuanLyTKFragment;
 import com.example.thuctapimtech.Fragment.SanPhamFragment;
 import com.example.thuctapimtech.Fragment.Top10Fragment;
 import com.example.thuctapimtech.Fragment.TrangchuFragment;
-import com.example.thuctapimtech.Model.DangNhapActivity;
+import com.example.thuctapimtech.Activity.DangNhap_Activity;
 import com.example.thuctapimtech.Model.QuanTriVien;
 import com.google.android.material.navigation.NavigationView;
 
@@ -81,7 +80,7 @@ import com.google.android.material.navigation.NavigationView;
          drawerLayout_home.addDrawerListener(drawerToggle);
 
          ActionBar actionBar = getSupportActionBar();
-         actionBar.setHomeAsUpIndicator(getDrawable(R.drawable.ic_menu));
+//         actionBar.setHomeAsUpIndicator(getDrawable(R.drawable.ic_menu));
 
 
          showInf();
@@ -142,13 +141,13 @@ import com.google.android.material.navigation.NavigationView;
                  }
 
                  //DOANH THU
-                 else if (item.getItemId() == R.id.revenue) {
-                     toolbar.setTitle(title[3]);
-                     if (mCurrentFragment != FRAGMENT_DOANHTHU) {
-                         replaceFragment(new DoanhThuFragment());
-                         mCurrentFragment = FRAGMENT_DOANHTHU;
-                     }
-                 }
+//                 else if (item.getItemId() == R.id.revenue) {
+//                     toolbar.setTitle(title[3]);
+//                     if (mCurrentFragment != FRAGMENT_DOANHTHU) {
+//                         replaceFragment(new DoanhThuFragment());
+//                         mCurrentFragment = FRAGMENT_DOANHTHU;
+//                     }
+//                 }
 
                  //TOP 10 SẢN PHẨM BÁN CHẠY
                  else if (item.getItemId() == R.id.top10) {
@@ -183,7 +182,7 @@ import com.google.android.material.navigation.NavigationView;
                      builder.setPositiveButton("Có", new DialogInterface.OnClickListener() {
                          @Override
                          public void onClick(DialogInterface dialog, int which) {
-                             startActivity(new Intent(MainActivity.this, DangNhapActivity.class));
+                             startActivity(new Intent(MainActivity.this, DangNhap_Activity.class));
                              finishAffinity();
                          }
                      });

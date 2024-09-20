@@ -21,10 +21,10 @@
         <item android:title="Thống kê"
             android:id="@+id/statistical">
             <menu>
-                <item
-                    android:id="@+id/revenue"
-                    android:icon="@drawable/ic_money"
-                    android:title="Doanh thu"/>
+<!--                <item-->
+<!--                    android:id="@+id/revenue"-->
+<!--                    android:icon="@drawable/ic_money"-->
+<!--                    android:title="Doanh thu"/>-->
 
                 <item
                     android:icon="@drawable/ic_vertical_align_top"

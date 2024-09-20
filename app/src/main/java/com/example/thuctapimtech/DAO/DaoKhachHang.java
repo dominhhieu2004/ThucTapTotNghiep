@@ -41,6 +41,12 @@ public class DaoKhachHang {
         return (row > 0);
     }
 
+    public boolean checkTH(String username){
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        Cursor c= db.rawQuery("SELECT * FROM KhachHang WHERE maKH=?", new String[]{username});
+        return c.getCount()>0;
+    }
+
     public int checkLoginKH(String user, String pass){
         String sql = "SELECT * FROM KhachHang WHERE maKH =? AND matKhau =?";
         List<KhachHang> list  = getData(sql, user, pass);

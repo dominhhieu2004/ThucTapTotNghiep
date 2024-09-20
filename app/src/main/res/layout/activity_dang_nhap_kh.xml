@@ -2,14 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DangNhap_KH"
     android:orientation="vertical"
-    android:layout_margin="15dp"
-    android:background="@color/white"
-    >
-
+    android:layout_margin="10dp"
+    tools:context=".Activity.DangNhapKH_Activity">
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -114,5 +112,4 @@
             />
 
     </LinearLayout>
-
 </LinearLayout>

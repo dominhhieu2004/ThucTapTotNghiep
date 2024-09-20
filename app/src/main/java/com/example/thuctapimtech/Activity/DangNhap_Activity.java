@@ -1,4 +1,4 @@
-package com.example.thuctapimtech.Model;
+package com.example.thuctapimtech.Activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -15,10 +15,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.thuctapimtech.DAO.DAOQuanTriVien;
 import com.example.thuctapimtech.MainActivity;
 import com.example.thuctapimtech.R;
+import com.example.thuctapimtech.TrangChuKH;
 import com.example.thuctapimtech.luaChonND;
 import com.google.android.material.textfield.TextInputLayout;
 
-public class DangNhapActivity extends AppCompatActivity {
+public class DangNhap_Activity extends AppCompatActivity {
 
     Button btn_login, btnOut;
     EditText txt_username,txt_password;
@@ -35,7 +36,7 @@ public class DangNhapActivity extends AppCompatActivity {
         btnOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(DangNhapActivity.this, luaChonND.class));
+                startActivity(new Intent(DangNhap_Activity.this, luaChonND.class));
             }
         });
 
@@ -73,16 +74,16 @@ public class DangNhapActivity extends AppCompatActivity {
                         w_password.setErrorEnabled(false);
                     }
                 } else {
-                    DAOQuanTriVien quanTriVien = new  DAOQuanTriVien(DangNhapActivity.this);
+                    DAOQuanTriVien quanTriVien = new  DAOQuanTriVien(DangNhap_Activity.this);
                     if (quanTriVien.checkLogin(getUsername,getPassword) > 0) {
-                        Toast.makeText(DangNhapActivity.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DangNhap_Activity.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
                         rememberAccount(chk_rememberAccount.isChecked());
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         intent.putExtra("username",getUsername);
                         startActivity(intent);
                         finish();
                     } else {
-                        Toast.makeText(DangNhapActivity.this, "Tài khoản hoặc mật khẩu chưa chính xác !", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(DangNhap_Activity.this, "Tài khoản hoặc mật khẩu chưa chính xác !", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
