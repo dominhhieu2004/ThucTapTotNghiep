@@ -37,7 +37,7 @@ public class SanPhamFragment extends Fragment {
 
      private FragmentSanPhamBinding binding;
     ArrayList<SanPham> lstSanPham;
-
+//dung add
 
     FloatingActionButton btn_add;
     static DaoSanPham sanPhamDao;
